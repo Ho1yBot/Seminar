@@ -32,9 +32,9 @@ PrintElement(matrix);
 Console.WriteLine("Введите индексы желаемого элемента в двумерном массиве ");
 int i = Convert.ToInt32(Console.ReadLine());
 int j = Convert.ToInt32(Console.ReadLine());
-if (i >= m || j >= n){
+if (i > m || j > n){
     Console.WriteLine("Такого элемента нет");
 }
 else {
-    Console.WriteLine(matrix[i,j]);
+    Console.WriteLine(matrix[i-1,j-1]);
 }
